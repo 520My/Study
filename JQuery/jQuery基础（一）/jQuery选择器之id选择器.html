@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+    div {
+        width: 100px;
+        height: 90px;
+        float: left;
+        padding: 5px;
+        margin: 5px;
+        background-color: #EEEEEE;
+    }
+    </style>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>   
+	 <div id="aaron">
+    	<p>id="aaron"</p>
+    	<p>选中</p>
+    </div>
+    <div id="imooc">
+        <p>id="imooc"</p>
+        <p>jQuery选中</p>
+    </div>
+    <div id="imooc">
+        <p>id="imooc"</p>
+        <p>jQuery未选中</p>
+    </div>
+
+    <script type="text/javascript">
+       //通过原生方法处理
+        var div = document.getElementById('aaron');
+        div.style.border = "3px solid blue";
+    </script>
+
+    <script type="text/javascript">
+        <!-- 如果多个元素分配了相同的id，将只匹配该id选择集合的第一个DOM元素 -->
+        $("#imooc").css("border", "3px solid red");
+    </script>
+
+</body>
+
+</html>
